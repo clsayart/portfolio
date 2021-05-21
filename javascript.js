@@ -17,4 +17,4 @@ function copyTextToClipboard(text) {
 	copyTextToClipboard('clsayart@gmail.com');
   });
 
-console.log("coucou toi")
+console.log("coucou toi")c
