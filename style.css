@@ -6,11 +6,13 @@ body {
 }
 
 .container {
-  max-width: 60%;
+  max-width: 80%;
   float: none;
   margin: 0 auto;
   display: flex;
+  align-items: center;
   justify-content: center;
+ 
 }
 
 body:before {
@@ -50,14 +52,16 @@ body:before {
 }
 
 h1 {
-  /* max-width: 60%;  */
   color: #f9f3f3;
   font-family: "Arial", cursive;
   font-size: 70px;
-  /* text-shadow: 2px 2px 10px #1d2671, 4px 4px 15px #c33764; */
-  /* text-shadow: 2px 2px 10px #dddddd, 4px 4px 15px #f25287; */
   text-shadow: 4px 4px 15px #f25287;
-  text-align: center;
+  display:flex;
+  justify-content: center;
+  width:100%;
+  /* flex-wrap: wrap; */
+  /* max-width: 80%; */
+  text-align: center; 
 }
 
 h1:hover {
@@ -85,7 +89,6 @@ li {
   margin-bottom: 50px;
   position: relative;
   cursor: pointer;
-  /* counter-increment: item; */
 }
 
 @media (max-width: 400px) {
@@ -128,15 +131,12 @@ li:hover .back {
 
 .front {
   z-index: 3;
-  /* color: #dddddd;  */
   color: white;
-
   text-align: center;
   line-height: 180px;
   font-size: 30px;
   font-weight: bold;
   font-family: "Arial", cursive;
-
   background: #f25287;
   background: -webkit-linear-gradient(45deg, #f9f3f3 10%, #f25287 50%);
   background: linear-gradient(45deg, 9f3f3 20%, #f25287 80%);
@@ -165,7 +165,6 @@ li:hover .back {
 }
 
 .linkedin-logo:hover {
-  
   box-shadow: #f25287;
 }
 
@@ -237,7 +236,7 @@ li a {
   color: #333;
 }
 
-li a:hover {
+li a:hover, li .close-button:hover,li .close-button2:hover {
   color: #f25287;
 }
 
@@ -248,7 +247,6 @@ div .contact-box {
 
 .contact-box:hover {
   filter: brightness(80%) saturate(140%);
-
   background-color: #f25287;
 }
 
@@ -264,9 +262,9 @@ div .contact-box {
   border-radius: 100%;
 }
 
- .scroll {
+.scroll {
   overflow: scroll;
-} 
+}
 
 .test2 {
   display: flex;
@@ -289,28 +287,21 @@ div .project-video2 {
   visibility: hidden;
 }
 
-#modal {
+#modal, #modal2 {
   width: 150px;
   height: 150px;
   background-color: white;
+  text-align: center;
 }
 
-#modal2 {
-  width: 150px;
-  height: 150px;
-  background-color: white;
-}
-
-#modal .close-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 4rem;
+#modal a, #modal2 a{
+  text-decoration: none; 
   font-weight: bold;
 }
 
-#modal2 .close-button2 {
+
+
+#modal .close-button, #modal2 .close-button2  {
   cursor: pointer;
   border: none;
   outline: none;
@@ -327,9 +318,7 @@ div .project-video2 {
 .portrait {
   width: 20%;
   height: 20%;
-  margin-top: 120px; 
+  margin-top: 120px;
   margin-left: -105px;
   border-radius: 50%;
 }
-
-
