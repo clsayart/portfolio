@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Lato:wght@300&display=swap");
+
 @import url("https://fonts.googleapis.com/css?family=Faster+One|Monoton");
 body {
   width: 100%;
@@ -12,7 +15,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
- 
 }
 
 body:before {
@@ -53,15 +55,15 @@ body:before {
 
 h1 {
   color: #f9f3f3;
-  font-family: "Arial", cursive;
+  font-family: "lato", "Arial", cursive;
   font-size: 70px;
   text-shadow: 4px 4px 15px #f25287;
-  display:flex;
+  display: flex;
   justify-content: center;
-  width:100%;
+  width: 100%;
   /* flex-wrap: wrap; */
   /* max-width: 80%; */
-  text-align: center; 
+  text-align: center;
 }
 
 h1:hover {
@@ -102,7 +104,7 @@ li div {
   width: 100%;
   height: 100%;
   position: absolute;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: all 0.5s;
   backface-visibility: hidden;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -136,7 +138,7 @@ li:hover .back {
   line-height: 180px;
   font-size: 30px;
   font-weight: bold;
-  font-family: "Arial", cursive;
+  font-family: "lato", "Arial", cursive;
   background: #f25287;
   background: -webkit-linear-gradient(45deg, #f9f3f3 10%, #f25287 50%);
   background: linear-gradient(45deg, 9f3f3 20%, #f25287 80%);
@@ -147,7 +149,7 @@ li:hover .back {
   text-align: center;
   line-height: 100px;
   font-size: 25px;
-  font-family: "Arial", cursive;
+  font-family: "lato", "Arial", cursive;
   background: #c33764;
 
   background: -webkit-linear-gradient(45deg, #f9f3f3 10%, #f7d9d9 50%);
@@ -156,6 +158,7 @@ li:hover .back {
 
 .back {
   transform: rotateY(180deg);
+  font-family: "lato", "Arial", cursive;
 }
 
 .linkedin-logo,
@@ -174,7 +177,8 @@ li:hover .back {
   flex-direction: row;
   align-items: center;
   color: #333;
-  font-family: "Arial", cursive;
+  font-family: "lato", "Arial", cursive;
+  margin-bottom: 30px;
 }
 
 .linkedin {
@@ -232,12 +236,26 @@ button {
   color: #f25287;
 }
 
-li a {
+li a.links {
   color: #333;
+  border: solid #f7d9d9 1px;
+  padding: 4px 8px 4px 8px;
+  margin: 4px;
+  border-radius: 8px;
 }
 
-li a:hover, li .close-button:hover,li .close-button2:hover {
-  color: #f25287;
+li a.github-links {
+  color: #333;
+  border: solid #f7d9d9 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 8px;
+}
+
+li a:hover,
+li .close-button:hover,
+li .close-button2:hover {
+  background-color: #f7d9d9;
 }
 
 div .contact-box {
@@ -287,29 +305,31 @@ div .project-video2 {
   visibility: hidden;
 }
 
-#modal, #modal2 {
-  width: 150px;
-  height: 150px;
+#modal,
+#modal2 {
+  width: 200px;
+  height: 200px;
   background-color: white;
   text-align: center;
 }
 
-#modal a, #modal2 a{
-  text-decoration: none; 
+#modal a,
+#modal2 a {
+  text-decoration: none;
   font-weight: bold;
 }
 
-
-
-#modal .close-button, #modal2 .close-button2  {
+#modal .close-button,
+#modal2 .close-button2 {
   cursor: pointer;
-  border: none;
   outline: none;
-  background: none;
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: bold;
+  border: solid #f7d9d9 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 8px;
 }
-
 
 .about-me {
   position: absolute;
@@ -328,5 +348,19 @@ div .project-video2 {
 }
 
 h4 {
+  font-family: "lato", "Arial", cursive;
   text-align: center;
 }
+
+h4.collab {
+  font-family: "lato", "Arial", cursive;
+  text-align: center;
+  font-size: x-large;
+  margin-bottom: 4px;
+}
+
+/* .links-title {
+  
+  border-bottom: solid 3px #f7d9d9; 
+  
+} */
