@@ -67,3 +67,18 @@ closeBtn3.addEventListener("click", () => {
   modal3.classList.add("hidden");
 });
 
+var linkBtn4 = document.querySelector(".project-video4");
+var modal4 = document.querySelector("#modal4");
+
+linkBtn4.addEventListener("click", function (event) {
+  modal4.classList.remove("hidden");
+});
+
+var closeBtn4 = document.querySelector(".close-button4");
+
+
+closeBtn4.addEventListener("click", () => {
+  modal4.classList.add("hidden");
+});
+
+

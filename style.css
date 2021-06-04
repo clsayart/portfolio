@@ -302,7 +302,7 @@ div .contact-box {
   align-items: center;
 }
 
-div .project-video, div .project-video2, div .project-video3 {
+div .project-video, div .project-video2, div .project-video3, div .project-video4 {
   width: 150px;
   height: 150px;
 }
@@ -314,7 +314,7 @@ div .project-video, div .project-video2, div .project-video3 {
 }
 
 #modal,
-#modal2, #modal3 {
+#modal2, #modal3, #modal4 {
   width: 200px;
   height: 200px;
   background-color: white;
@@ -322,13 +322,13 @@ div .project-video, div .project-video2, div .project-video3 {
 }
 
 #modal a,
-#modal2 a, #modal3 a {
+#modal2 a, #modal3 a, #modal4 a {
   text-decoration: none;
   font-weight: bold;
 }
 
 #modal .close-button,
-#modal2 .close-button2, #modal3 .close-button3 {
+#modal2 .close-button2, #modal3 .close-button3, #modal4 .close-button4 {
   cursor: pointer;
   outline: none;
   font-size: 2rem;
