@@ -238,7 +238,7 @@ button {
 
 li a.links {
   color: #333;
-  border: solid #f7d9d9 1px;
+  border: solid #f7d9d9 2px;
   padding: 4px 8px 4px 8px;
   margin: 4px;
   border-radius: 8px;
@@ -246,15 +246,26 @@ li a.links {
 
 li a.github-links {
   color: #333;
-  border: solid #f7d9d9 1px;
-  padding-left: 8px;
-  padding-right: 8px;
+  border: solid #f7d9d9 2px;
   border-radius: 8px;
+  font-size: large; 
+
+}
+
+li p.coming-soon {
+font-size: large;
+}
+
+
+.github-links-p{
+  display:flex;
+  align-content: space-between;
 }
 
 li a:hover,
 li .close-button:hover,
-li .close-button2:hover {
+li .close-button2:hover,
+li .close-button3:hover {
   background-color: #f7d9d9;
 }
 
@@ -291,22 +302,19 @@ div .contact-box {
   align-items: center;
 }
 
-div .project-video {
+div .project-video, div .project-video2, div .project-video3 {
   width: 150px;
   height: 150px;
 }
 
-div .project-video2 {
-  width: 150px;
-  height: 150px;
-}
+
 
 .hidden {
   visibility: hidden;
 }
 
 #modal,
-#modal2 {
+#modal2, #modal3 {
   width: 200px;
   height: 200px;
   background-color: white;
@@ -314,18 +322,18 @@ div .project-video2 {
 }
 
 #modal a,
-#modal2 a {
+#modal2 a, #modal3 a {
   text-decoration: none;
   font-weight: bold;
 }
 
 #modal .close-button,
-#modal2 .close-button2 {
+#modal2 .close-button2, #modal3 .close-button3 {
   cursor: pointer;
   outline: none;
   font-size: 2rem;
   font-weight: bold;
-  border: solid #f7d9d9 1px;
+  border: solid #f7d9d9 3px;
   padding-left: 8px;
   padding-right: 8px;
   border-radius: 8px;
@@ -359,8 +367,11 @@ h4.collab {
   margin-bottom: 4px;
 }
 
-/* .links-title {
+.links-title {
+  margin-bottom: 7px;
+  padding-bottom: 7px;
+  margin-top: 8px;
   
-  border-bottom: solid 3px #f7d9d9; 
+  /* border-bottom: solid 3px #f7d9d9;  */
   
-} */
+} 
